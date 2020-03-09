@@ -8,5 +8,5 @@ app_name = 'courses'
 urlpatterns = [
     path('', index, name='index'),
     # url(r'^(?P<pk>\d+)/$', 'details', name='details'),
-    path('(?P<slug>[\w_-]+)/$', details, name='details'),
+    path('<slug:slug>/', details, name='details'),
 ]
