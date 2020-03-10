@@ -7,9 +7,11 @@ admin.autodiscover()
 
 urlpatterns = [
     path('', include('simplemooc.core.urls', namespace='core')),
+    path('contas/', include('simplemooc.accounts.urls', namespace='accounts')),
     path('cursos/', include('simplemooc.courses.urls', namespace='courses')),
     path('admin/', admin.site.urls),
 ]
+
 
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
