@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="pure-g-r content-ribbon">
+    <div class="pure-u-1">
+        <h2>Obrigado por utilizar nosso site</h2>
+        <form class="pure-form pure-form-stacked" method="post">
+            {% csrf_token %}
+            <p>
+                Logar novamente <a href="{% url 'accounts:login' %}" title="">Logar</a> <br />
+            </p>
+        </form>
+    </div>
+</div>
+{% endblock %}
