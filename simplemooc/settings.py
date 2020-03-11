@@ -132,7 +132,7 @@ DEFAULT_FROM_EMAIL = 'Nome <marcosrmartini@gmail.com>'
 """EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'marcosrmartini@gmail.com'
-EMAIL_HOST_PASSWORD = 'campinas@20'
+EMAIL_HOST_PASSWORD = ''
 EMAIL_PORT = 587
 """
 CONTACT_EMAIL = 'contato@simplemooc.com'
